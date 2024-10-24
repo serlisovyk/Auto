@@ -10,4 +10,12 @@ window.addEventListener('DOMContentLoaded', function () {
     'accordion-faq__item--active',
     false
   )
+
+  slider(
+    '.testimonials__cards',
+    '.testimonials__wrapper',
+    '.testimonials__card',
+    '.arrow-prev',
+    '.arrow-next'
+  )
 })
