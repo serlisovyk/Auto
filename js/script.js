@@ -1,4 +1,7 @@
 import burger from './modules/burger.js'
+import accordion from './modules/accordion.js'
+import slider from './modules/slider.js'
+import form from './modules/form.js'
 
 window.addEventListener('DOMContentLoaded', function () {
   burger('.burger', '.nav__link', 'nav--open')
