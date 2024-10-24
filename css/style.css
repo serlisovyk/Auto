@@ -41,3 +41,132 @@ h2 {
   }
 }
 /* #endregion */
+/* #region Header */
+.header {
+  padding-top: 32px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__inner .header__line {
+  border: 1px solid var(--grey);
+  width: 42px;
+  height: 0px;
+  transform: rotate(-90deg);
+  opacity: 0.36;
+  margin: 0 32px;
+}
+.logo {
+  position: relative;
+  z-index: 3;
+}
+.nav {
+  margin-left: auto;
+}
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+.nav__link {
+  font-weight: 600;
+  line-height: 175%;
+  color: var(--black);
+  transition: opacity 0.2s linear;
+}
+.nav__link:hover {
+  opacity: 0.7;
+}
+.header__help {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.help-header__text {
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--black);
+  opacity: 0.7;
+}
+.help-header__phone {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: var(--black);
+}
+@media (max-width: 991px) {
+  .nav__list {
+    gap: 25px;
+  }
+  .header__inner span {
+    margin: 0 25px;
+  }
+}
+@media (max-width: 850px) {
+  .nav {
+    margin-right: auto;
+  }
+  .nav__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    overflow: auto;
+    transition: left 0.2s ease;
+  }
+  .nav__body::before {
+    content: '';
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 70px;
+    background-color: #000;
+    z-index: 2;
+    transition: left 0.2s ease;
+  }
+  .nav__link {
+    color: var(--light-grey);
+  }
+  .header__inner .header__line {
+    display: none;
+  }
+  .nav--open .logo path {
+    fill: var(--white);
+  }
+  .nav--open {
+    overflow: hidden;
+  }
+  .nav--open .nav__body,
+  .nav--open .nav__body::before {
+    left: 0;
+  }
+  .nav--open .help-header__text,
+  .nav--open .help-header__phone {
+    color: #fff;
+  }
+  .nav--open .logo {
+    fill: #fff;
+  }
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding-top: 120px;
+  }
+}
+@media (max-width: 420px) {
+  .logo {
+    width: 45px;
+    overflow: hidden;
+  }
+}
+/* #endregion */
