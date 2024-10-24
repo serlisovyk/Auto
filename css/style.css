@@ -677,3 +677,52 @@ h2 {
   }
 }
 /* #endregion */
+/* #region Stat */
+.stat {
+  padding: 50px 0;
+}
+.stat__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.stat__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.stat__number {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #661ce7;
+}
+.stat__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  opacity: 0.7;
+}
+@media (max-width: 900px) {
+  .stat__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .stat__content {
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .stat__number {
+    font-size: 44px;
+  }
+  .stat__text {
+    font-size: 16px;
+  }
+}
+/* #endregion */
