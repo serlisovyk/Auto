@@ -18,4 +18,6 @@ window.addEventListener('DOMContentLoaded', function () {
     '.arrow-prev',
     '.arrow-next'
   )
+
+  form('form', 'input', 'textarea')
 })
