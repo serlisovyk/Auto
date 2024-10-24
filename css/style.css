@@ -726,3 +726,36 @@ h2 {
   }
 }
 /* #endregion */
+/* #region Brands */
+.brands {
+  padding: 128px 0;
+  background-color: #e2e6e9;
+}
+.brands__title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.brands__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+}
+@media (max-width: 991px) {
+  .brands {
+    padding: 90px 0;
+  }
+}
+@media (max-width: 767px) {
+  .brands {
+    padding: 60px 0;
+  }
+  .brands__content {
+    flex-direction: column;
+  }
+  .brands__title {
+    margin-bottom: 48px;
+  }
+}
+/* #endregion */
