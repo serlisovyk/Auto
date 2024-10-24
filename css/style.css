@@ -1323,3 +1323,32 @@ h2 {
   }
 }
 /* #endregion */
+/* #region Copyright */
+.copyright {
+  padding: 64px 0;
+  background-color: var(--black);
+}
+.copyright__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright__text {
+  font-weight: 600;
+  line-height: 175%;
+  color: var(--white);
+}
+@media (max-width: 767px) {
+  .copyright {
+    padding: 32px 0;
+  }
+}
+@media (max-width: 400px) {
+  .copyright {
+    padding: 20px 0;
+  }
+  .copyright__text {
+    font-size: 12px;
+  }
+}
+/* #endregion */
