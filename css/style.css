@@ -1098,3 +1098,140 @@ h2 {
   }
 }
 /* #endregion */
+/* #region Feedback */
+.feedback {
+  padding-block: 120px;
+}
+.feedback__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.feedback__title {
+  max-width: 510px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  margin-bottom: 48px;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 20px;
+}
+.feedback__input {
+  background-color: var(--light-grey);
+  border-radius: 10px;
+  width: 624px;
+  height: 72px;
+  padding-left: 10px;
+  font-weight: 600;
+  line-height: 175%;
+  font-size: 16px;
+  color: var(--black);
+}
+.feedback__input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--black);
+}
+.feedback__textarea {
+  resize: none;
+  background-color: var(--light-grey);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--black);
+  margin-bottom: 48px;
+  padding-left: 10px;
+}
+.feedback__textarea::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--black);
+}
+.content-feedback__box {
+  margin-bottom: 32px;
+}
+.content-feedback__box:last-child {
+  margin-bottom: 0;
+}
+.content-feedback__minititle {
+  font-weight: 600;
+  line-height: 175%;
+  color: var(--black);
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+.content-feedback__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: var(--black);
+}
+@media (max-width: 1200px) {
+  .feedback__title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+  .feedback__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .feedback {
+    padding-block: 90px;
+  }
+  .feedback__form {
+    max-width: 450px;
+  }
+  .feedback__input {
+    width: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback {
+    padding-block: 60px;
+  }
+  .feedback__title {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  .feedback__textarea {
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 540px) {
+  .content-feedback__minititle {
+    font-size: 14px;
+  }
+  .feedback__form {
+    max-width: 300px;
+  }
+  .feedback__input {
+    width: 320px;
+  }
+  .content-feedback__text {
+    font-size: 16px;
+  }
+  .feedback__textarea {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .feedback__input {
+    width: 270px;
+  }
+}
+/* #endregion */
