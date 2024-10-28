@@ -1,4 +1,6 @@
 /* #region Page */
+@import url('reset.css');
+
 :root {
   --primary: #ff6433;
   --black: #1e1b1b;
@@ -607,7 +609,8 @@ h2 {
   margin-top: 120px;
   max-width: 1920px;
   max-height: 502px;
-  background-image: url(../images/contact/contact-1.jpg);
+  background-image: url(images/contact/contact-1.jpg),
+    url(images/contact/contact-1.webp);
   background-repeat: no-repeat;
   position: relative;
 }
@@ -617,7 +620,8 @@ h2 {
   top: 0;
   right: 0;
   z-index: -1;
-  background-image: url(../images/contact/contact-2.jpg);
+  background-image: url(images/contact/contact-2.jpg),
+    url(images/contact/contact-2.webp);
   background-repeat: no-repeat;
   width: 944px;
   height: 502px;
